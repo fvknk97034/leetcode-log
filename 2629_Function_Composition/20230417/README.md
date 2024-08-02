@@ -9,6 +9,7 @@
 <!-- Describe your approach to solving the problem. -->
 
 ## Complexity
+
 - Time complexity:
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
 
@@ -23,7 +24,7 @@
  * @return {Function}
  */
 var compose = function(functions) {
-	return function(x) {
+  return function(x) {
     if(functions.length == 0) return x
 
     const func = functions.pop()

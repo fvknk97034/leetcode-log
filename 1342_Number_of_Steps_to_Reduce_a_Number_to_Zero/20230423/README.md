@@ -2,7 +2,7 @@
 
 ## Intuition
 
-- 繰り返し回数が不定かつ終了条件が明確なため、`while`を使用
+- 繰り返し回数が不定、かつ終了条件が明確なため、`while` を使用
 
 ## Approach
 <!-- Describe your approach to solving the problem. -->

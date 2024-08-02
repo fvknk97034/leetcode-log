@@ -2,8 +2,6 @@
 
 ## Intuition
 
--
-
 ## Approach
 <!-- Describe your approach to solving the problem. -->
 
