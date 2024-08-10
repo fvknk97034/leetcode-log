@@ -3,6 +3,7 @@
     "concat",
     "nums",
     "rindex",
-    "Subarrays"
+    "Subarrays",
+    "usize"
   ]
 }
