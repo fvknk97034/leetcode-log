@@ -1,0 +1,31 @@
+# 1317. Convert Integer to the Sum of Two No-Zero Integers
+
+## Intuition
+
+## Approach
+<!-- Describe your approach to solving the problem. -->
+
+## Complexity
+
+- Time complexity:
+<!-- Add your time complexity here, e.g. $$O(n)$$ -->
+
+- Space complexity:
+<!-- Add your space complexity here, e.g. $$O(n)$$ -->
+
+## Code
+
+```ruby
+# @param {Integer} n
+# @return {Integer[]}
+def get_no_zero_integers(n)
+  (1..n - 1).each do |a|
+    next if a.digits.include?(0)
+
+    b = n - a
+    next if b.digits.include?(0)
+
+    return [a, b]
+  end
+end
+```
