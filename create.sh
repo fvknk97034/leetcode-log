@@ -1,6 +1,7 @@
 #!/bin/zsh
 today=$(date '+%Y%m%d')
-title=$1
+title="${1#"${1%%[![:space:]]*}"}"; title="${title%"${title##*[![:space:]]}"}"
+
 dirname=$(echo $title | sed "s/\.\ /_/g" | sed "s/\ /_/g" | sed "s/?/Question_Mark/g" | sed "s/'/_/g" )
 
 git switch -C $dirname
