@@ -30,5 +30,4 @@ class Solution {
     root.val = sum;
     dfs(root.left);
   }
-
 }
