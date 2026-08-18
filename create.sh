@@ -4,6 +4,7 @@ title="${1#"${1%%[![:space:]]*}"}"; title="${title%"${title##*[![:space:]]}"}"
 
 dirname=$(echo $title | sed "s/\.\ /_/g" | sed "s/\ /_/g" | sed "s/?/Question_Mark/g" | sed "s/'/_/g" )
 
+git fetch -p && git switch main && git pull && git branch | grep -v "main\|\* " | xargs git branch -d
 git switch -C $dirname
 
 if [ ! -d "history/$dirname/$today" ]; then
